@@ -1,5 +1,5 @@
 let str = "thisisadummystring";
-let target = "strins";
+let target = "string";
 
 function subStr(str, target) {
     let start = 0, end = str.length, targetSize = target.length;
@@ -16,7 +16,7 @@ function subStr(str, target) {
                 ++i;
             }
             if (count == targetSize) {
-                return true;
+                return start;
             }
         }
         ++start;
